@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NSPViewController : UIViewController
+@interface NSPViewController : PFQueryTableViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
 
 @end

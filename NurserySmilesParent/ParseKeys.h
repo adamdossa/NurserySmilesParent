@@ -1,0 +1,2 @@
+#define kParseAppId @"N8OaE5DWm9ZbUHu6e7MDcCK3zkw494xadaFdq1bv"
+#define kParseClientKey @"NiqDh9PbsI0LJfm5OXQUqMVYRLmv3DUd4n00HAGs"

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Child" representedClassName="Child" parentEntity="FTASyncParent" syncable="YES">
+        <attribute name="emailAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="classroom" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Classroom" inverseName="children" inverseEntity="Classroom" syncable="YES"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Event" inverseName="child" inverseEntity="Event" syncable="YES"/>
+    </entity>
+    <entity name="Classroom" representedClassName="Classroom" parentEntity="FTASyncParent" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="children" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Child" inverseName="classroom" inverseEntity="Child" syncable="YES"/>
+        <relationship name="school" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="School" inverseName="classrooms" inverseEntity="School" syncable="YES"/>
+    </entity>
+    <entity name="Comment" representedClassName="Comment" parentEntity="Event" syncable="YES">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="comment" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <entity name="DiaperChange" representedClassName="DiaperChange" parentEntity="Event" syncable="YES">
+        <attribute name="cream" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Diet" representedClassName="Diet" parentEntity="Event" syncable="YES">
+        <attribute name="drinkAmount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="drinkType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mealAmount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mealTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="mealType" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Event" representedClassName="Event" isAbstract="YES" parentEntity="FTASyncParent" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="child" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Child" inverseName="events" inverseEntity="Child" syncable="YES"/>
+    </entity>
+    <entity name="FTASyncParent" representedClassName="FTASyncParent" isAbstract="YES" syncable="YES">
+        <attribute name="createdHere" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="deleted" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="objectId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="syncStatus" optional="YES" attributeType="Integer 16" defaultValueString="2" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="Milk" representedClassName="Milk" parentEntity="Event" syncable="YES">
+        <attribute name="ounces" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="Photo" representedClassName="Photo" parentEntity="FTASyncParent" syncable="YES">
+        <attribute name="photo" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="comment" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Comment" inverseName="photos" inverseEntity="Comment" syncable="YES"/>
+    </entity>
+    <entity name="School" representedClassName="School" parentEntity="FTASyncParent" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="classrooms" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Classroom" inverseName="school" inverseEntity="Classroom" syncable="YES"/>
+    </entity>
+    <entity name="Sleep" representedClassName="Sleep" parentEntity="Event" syncable="YES">
+        <attribute name="duration" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Child" positionX="-173" positionY="-99" width="128" height="103"/>
+        <element name="Classroom" positionX="-315" positionY="81" width="128" height="90"/>
+        <element name="Comment" positionX="-315" positionY="243" width="128" height="88"/>
+        <element name="DiaperChange" positionX="261" positionY="288" width="128" height="88"/>
+        <element name="Diet" positionX="-171" positionY="284" width="128" height="118"/>
+        <element name="Event" positionX="18" positionY="63" width="128" height="73"/>
+        <element name="FTASyncParent" positionX="-621" positionY="-117" width="128" height="120"/>
+        <element name="Milk" positionX="126" positionY="288" width="128" height="73"/>
+        <element name="Photo" positionX="-567" positionY="288" width="128" height="73"/>
+        <element name="School" positionX="-470" positionY="78" width="128" height="75"/>
+        <element name="Sleep" positionX="-29" positionY="288" width="128" height="73"/>
+    </elements>
+</model>

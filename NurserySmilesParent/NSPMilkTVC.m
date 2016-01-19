@@ -144,7 +144,7 @@
     
     NSDate *startTime = (NSDate*) [object objectForKey:@"startTime"];
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"hh:mm"];
+    [dateFormatter setDateFormat:@"hh:mm a"];
     NSString *timeString = [dateFormatter stringFromDate:startTime];
     NSNumber *ounces = [object objectForKey:@"ounces"];
     NSString *ouncesString = [NSString stringWithFormat:@"Ounces %2.2f",[ounces doubleValue]];

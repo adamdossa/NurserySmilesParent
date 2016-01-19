@@ -177,7 +177,7 @@
     NSDate *mealTime = [object objectForKey:@"mealTime"];
     
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"hh:mm"];
+    [dateFormatter setDateFormat:@"hh:mm a"];
     NSString *mealTimeString = [dateFormatter stringFromDate:mealTime];
     cell.textLabel.text = [NSString stringWithFormat:@"%@: %@, %@: %@", mealType, mealAmount, drinkType, drinkAmount];
     cell.detailTextLabel.text = [@"Time: " stringByAppendingString:mealTimeString];

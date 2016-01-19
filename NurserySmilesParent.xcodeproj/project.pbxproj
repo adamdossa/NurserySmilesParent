@@ -15,7 +15,6 @@
 		5E186B7517218D91000F6BE4 /* NSPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E186B7417218D91000F6BE4 /* NSPAppDelegate.m */; };
 		5E186B7E17218D91000F6BE4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E186B7C17218D91000F6BE4 /* MainStoryboard.storyboard */; };
 		5E186B8117218D91000F6BE4 /* NSPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E186B8017218D91000F6BE4 /* NSPViewController.m */; };
-		5E186B8917218DD4000F6BE4 /* NurserySmilesParent.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 5E186B8817218DD4000F6BE4 /* NurserySmilesParent.xcdatamodel */; };
 		5E186B8C17218E78000F6BE4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E186B8B17218E78000F6BE4 /* StoreKit.framework */; };
 		5E186B8E17218E7D000F6BE4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E186B8D17218E7D000F6BE4 /* CoreLocation.framework */; };
 		5E186B9017218E8F000F6BE4 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E186B8F17218E8F000F6BE4 /* libz.1.1.3.dylib */; };
@@ -44,6 +43,7 @@
 		5E77447E1728A1CA00C4A745 /* NSPReminderTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E77447D1728A1CA00C4A745 /* NSPReminderTVC.m */; };
 		5E8A3CFC1729B0B100AC8080 /* smile_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E8A3CFA1729B0B100AC8080 /* smile_logo.png */; };
 		5E8A3CFD1729B0B100AC8080 /* smile_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E8A3CFB1729B0B100AC8080 /* smile_logo@2x.png */; };
+		5E95A75517345524003F7287 /* NSPReportTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E95A75417345524003F7287 /* NSPReportTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,8 +60,6 @@
 		5E186B7D17218D91000F6BE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		5E186B7F17218D91000F6BE4 /* NSPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSPViewController.h; sourceTree = "<group>"; };
 		5E186B8017218D91000F6BE4 /* NSPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSPViewController.m; sourceTree = "<group>"; };
-		5E186B8817218DD4000F6BE4 /* NurserySmilesParent.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NurserySmilesParent.xcdatamodel; sourceTree = "<group>"; };
-		5E186B8A17218E0C000F6BE4 /* ParseKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseKeys.h; sourceTree = "<group>"; };
 		5E186B8B17218E78000F6BE4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		5E186B8D17218E7D000F6BE4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5E186B8F17218E8F000F6BE4 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
@@ -100,6 +98,8 @@
 		5E77447D1728A1CA00C4A745 /* NSPReminderTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSPReminderTVC.m; sourceTree = "<group>"; };
 		5E8A3CFA1729B0B100AC8080 /* smile_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smile_logo.png; sourceTree = "<group>"; };
 		5E8A3CFB1729B0B100AC8080 /* smile_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smile_logo@2x.png"; sourceTree = "<group>"; };
+		5E95A75317345524003F7287 /* NSPReportTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSPReportTVC.h; sourceTree = "<group>"; };
+		5E95A75417345524003F7287 /* NSPReportTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSPReportTVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				5E186B7C17218D91000F6BE4 /* MainStoryboard.storyboard */,
-				5E186B8817218DD4000F6BE4 /* NurserySmilesParent.xcdatamodel */,
 				5E489E1E17296CE300C77318 /* NSPTodayTVC.h */,
 				5E489E1F17296CE300C77318 /* NSPTodayTVC.m */,
 				5E186C761721E243000F6BE4 /* NSPDietTVC.h */,
@@ -202,6 +201,8 @@
 				5E186C621721ACF4000F6BE4 /* NSPDiaperTVC.m */,
 				5E186C671721C0F0000F6BE4 /* NSPDateTVC.h */,
 				5E186C681721C0F1000F6BE4 /* NSPDateTVC.m */,
+				5E95A75317345524003F7287 /* NSPReportTVC.h */,
+				5E95A75417345524003F7287 /* NSPReportTVC.m */,
 				5E186B7F17218D91000F6BE4 /* NSPViewController.h */,
 				5E186B8017218D91000F6BE4 /* NSPViewController.m */,
 				5E186C5E1721A703000F6BE4 /* NSPEventTVC.h */,
@@ -217,7 +218,6 @@
 				5E10ACB21728B57D00D52E13 /* Icons */,
 				5E186B7317218D91000F6BE4 /* NSPAppDelegate.h */,
 				5E186B7417218D91000F6BE4 /* NSPAppDelegate.m */,
-				5E186B8A17218E0C000F6BE4 /* ParseKeys.h */,
 				5E186B6C17218D91000F6BE4 /* NurserySmilesParent-Info.plist */,
 				5E186B6D17218D91000F6BE4 /* InfoPlist.strings */,
 				5E186B7017218D91000F6BE4 /* main.m */,
@@ -300,7 +300,6 @@
 				5E186B7117218D91000F6BE4 /* main.m in Sources */,
 				5E186B7517218D91000F6BE4 /* NSPAppDelegate.m in Sources */,
 				5E186B8117218D91000F6BE4 /* NSPViewController.m in Sources */,
-				5E186B8917218DD4000F6BE4 /* NurserySmilesParent.xcdatamodel in Sources */,
 				5E186C601721A704000F6BE4 /* NSPEventTVC.m in Sources */,
 				5E186C631721ACF4000F6BE4 /* NSPDiaperTVC.m in Sources */,
 				5E186C691721C0F1000F6BE4 /* NSPDateTVC.m in Sources */,
@@ -311,6 +310,7 @@
 				5E186C781721E246000F6BE4 /* NSPDietTVC.m in Sources */,
 				5E77447E1728A1CA00C4A745 /* NSPReminderTVC.m in Sources */,
 				5E489E2017296CE300C77318 /* NSPTodayTVC.m in Sources */,
+				5E95A75517345524003F7287 /* NSPReportTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,8 +382,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Adam Dossa (PJN7NLVLZZ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Adam Dossa (PJN7NLVLZZ)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Adam Dossa";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Adam Dossa";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -391,8 +391,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "DE0ABB21-596C-4925-9015-650F84B59133";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DE0ABB21-596C-4925-9015-650F84B59133";
+				PROVISIONING_PROFILE = "E295249B-CEA9-438C-B645-912BCA5AEDF0";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E295249B-CEA9-438C-B645-912BCA5AEDF0";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -422,8 +422,8 @@
 		5E186B8617218D91000F6BE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Adam Dossa (PJN7NLVLZZ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Adam Dossa (PJN7NLVLZZ)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Adam Dossa";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Adam Dossa";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/..\"",
@@ -433,8 +433,8 @@
 				INFOPLIST_FILE = "NurserySmilesParent/NurserySmilesParent-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "DE0ABB21-596C-4925-9015-650F84B59133";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DE0ABB21-596C-4925-9015-650F84B59133";
+				PROVISIONING_PROFILE = "E295249B-CEA9-438C-B645-912BCA5AEDF0";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E295249B-CEA9-438C-B645-912BCA5AEDF0";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

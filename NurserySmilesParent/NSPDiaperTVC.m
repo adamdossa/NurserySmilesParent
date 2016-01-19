@@ -153,7 +153,7 @@
     cell.textLabel.text = typeString;
     NSDate *startTime = (NSDate*) [object objectForKey:@"startTime"];
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"hh:mm"];
+    [dateFormatter setDateFormat:@"hh:mm a"];
     NSString *timeString = [dateFormatter stringFromDate:startTime];
     cell.detailTextLabel.text = [@"Time: " stringByAppendingString:timeString];
     

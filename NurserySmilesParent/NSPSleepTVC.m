@@ -149,7 +149,7 @@
     NSNumber *duration = (NSNumber*) [object objectForKey:@"duration"];
 
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"hh:mm"];
+    [dateFormatter setDateFormat:@"hh:mm a"];
     NSString *timeString = [dateFormatter stringFromDate:startTime];
     
     NSString *durationString = [self stringFromTimeInterval:[duration doubleValue]];

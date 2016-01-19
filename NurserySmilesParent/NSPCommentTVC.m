@@ -172,19 +172,22 @@
 
     NSDate *commentTime = (NSDate*) [object objectForKey:@"commentTime"];
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"hh:mm"];
+    [dateFormatter setDateFormat:@"hh:mm a"];
     NSString *timeString = [dateFormatter stringFromDate:commentTime];
     cell.detailTextLabel.text = timeString;    
     
-    //Empty relationships in a PFObject will return an NSNull object
     PFFile *photo = [object objectForKey:@"photo"];
-    [photo getDataInBackgroundWithBlock:^(NSData *result, NSError *error){
-        if (result) {
-            cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
-        } else {
-            cell.accessoryType = UITableViewCellAccessoryNone;
-        }
-    }];
+    cell.accessoryType = UITableViewCellAccessoryNone;
+    if (photo) {
+        cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+    }
+//    [photo getDataInBackgroundWithBlock:^(NSData *result, NSError *error){
+//        if (result) {
+//            cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+//        } else {
+//            cell.accessoryType = UITableViewCellAccessoryNone;
+//        }
+//    }];
     return cell;
 }
 

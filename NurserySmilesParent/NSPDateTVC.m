@@ -50,7 +50,7 @@
     dispatch_queue_t q = dispatch_queue_create("table view loading queue", NULL);
     dispatch_async(q, ^{
         NSMutableArray *eventObjects = [[NSMutableArray alloc] init];
-        NSArray *subTypes = @[@"DiaperChange",@"Milk",@"Comment",@"Diet",@"Sleep"];
+        NSArray *subTypes = @[@"DiaperChange",@"Milk",@"Comment",@"Diet",@"Sleep",@"Reminder"];
         UIApplication *myApplication = [UIApplication sharedApplication];
         myApplication.networkActivityIndicatorVisible = TRUE;
         for (NSString *subType in subTypes) {
